@@ -1,0 +1,13 @@
+// $Id$
+// vim:ft=javascript
+
+// If your extension references something external, use ARG_WITH
+// ARG_WITH("trim_utf8", "for trim_utf8 support", "no");
+
+// Otherwise, use ARG_ENABLE
+// ARG_ENABLE("trim_utf8", "enable trim_utf8 support", "no");
+
+if (PHP_TRIM_UTF8 != "no") {
+	EXTENSION("trim_utf8", "trim_utf8.c");
+}
+
