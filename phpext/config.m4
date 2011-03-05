@@ -47,15 +47,15 @@ if test "$PHP_TRIM_UTF8" != "no"; then
   LIBNAME=trim_utf8 # you may want to change this
   LIBSYMBOL=trim    # you most likely want to change this 
 
-  PHP_CHECK_LIBRARY($LIBNAME, $LIBSYMBOL,
-  [
+#  PHP_CHECK_LIBRARY($LIBNAME, $LIBSYMBOL,
+#  [
     PHP_ADD_LIBRARY_WITH_PATH($LIBNAME, $TRIM_UTF8_DIR, TRIM_UTF8_SHARED_LIBADD)
     AC_DEFINE(HAVE_TRIM_UTF8LIB,1,[ ])
-  ],[
-    AC_MSG_ERROR([wrong trim_utf8 lib version or lib not found])
-  ],[
-    -L$TRIM_UTF8_DIR -l$LIBNAME
-  ])
+#  ],[
+#    AC_MSG_ERROR([wrong trim_utf8 lib version or lib not found])
+#  ],[
+#    -L$TRIM_UTF8_DIR -l$LIBNAME
+#  ])
   
   CFLAGS="$CLFAFS -Wall -Werror -g -O2"
   PHP_SUBST(TRIM_UTF8_SHARED_LIBADD)
