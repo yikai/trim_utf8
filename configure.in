@@ -22,5 +22,6 @@ AC_CHECK_HEADERS([stdlib.h string.h])
 # Checks for library functions.
 
 AC_CONFIG_FILES([Makefile
-                 lib/Makefile])
+                 lib/Makefile
+                 phpext/Makefile])
 AC_OUTPUT

@@ -21,7 +21,7 @@ if test "$PHP_TRIM_UTF8" != "no"; then
   dnl Write more examples of tests here...
 
   # --with-trim_utf8 -> check with-path
-  SEARCH_PATH="/usr/local /usr ../lib"     # you might want to change this
+  SEARCH_PATH="/usr/local /usr ../../lib"     # you might want to change this
   SEARCH_FOR="trim_utf8.h"  # you most likely want to change this
   if test -r $PHP_TRIM_UTF8/$SEARCH_FOR; then # path given as parameter
     TRIM_UTF8_DIR=$PHP_TRIM_UTF8
